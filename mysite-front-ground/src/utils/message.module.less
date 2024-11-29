@@ -1,0 +1,29 @@
+@import '~@/styles/mixture.less';
+@import '~@/styles/var.less';
+
+.message{
+    padding: 15px 30px;
+    border-radius: 5px;
+    box-shadow: -3px 3px 10px #666;
+    color: #fff;
+    font-size: 20px;
+    .posi-center();
+    transform:translate(-50%,-50%) translateY(15px);
+    opacity: 0;
+    transition: .3s;
+    &-info{
+        background-color: @primary;
+    };
+    &-success{
+        background-color: @success;
+    }
+    &-warn{
+        background-color: @warn;
+    }
+    &-error{
+        background-color: @danger;
+    }
+    .content{
+        vertical-align: 3px;
+    }
+}
